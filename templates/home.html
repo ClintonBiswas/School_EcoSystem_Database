@@ -1,0 +1,140 @@
+{% extends 'base.html' %}
+{% block style %}
+<style>
+    .main{
+        float: left;
+        margin-left: 20px;
+        height: 160px;
+        width: 70px;
+        background-color: #BBD6EE;
+        margin-bottom: 20px;
+    }
+    .main p{
+        margin-top: 132px;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+{% for value in result %}
+    {% if value == '1' %}
+    .active{
+        background-color: #4472C4;
+    }
+    {% endif %}
+{% endfor %}
+
+{% for value in result %}
+    {% if value == '2' %}
+    .active1{
+        background-color: #4472C4;
+    }
+    {% endif %}
+{% endfor %}
+
+{% for value in result %}
+    {% if value == '3' %}
+    .active2{
+        background-color: #4472C4;
+    }
+    {% endif %}
+{% endfor %}
+
+{% for value in result %}
+    {% if value == '4' %}
+    .active3{
+        background-color: #4472C4;
+    }
+    {% endif %}
+{% endfor %}
+
+{% for value in result %}
+    {% if value == '5' %}
+    .active4{
+        background-color: #4472C4;
+    }
+    {% endif %}
+{% endfor %}
+
+{% for value in result %}
+    {% if value == '6' %}
+    .active5{
+        background-color: #4472C4;
+    }
+    {% endif %}
+{% endfor %}
+
+{% for value in result %}
+    {% if value == '7' %}
+    .active6{
+        background-color: #4472C4;
+    }
+    {% endif %}
+{% endfor %}
+
+{% for value in result %}
+    {% if value == '8' %}
+    .active7{
+        background-color: #4472C4;
+    }
+    {% endif %}
+{% endfor %}
+
+{% for value in result %}
+    {% if value == '9' %}
+    .active8{
+        background-color: #4472C4;
+    }
+    {% endif %}
+{% endfor %}
+
+{% for value in result %}
+    {% if value == '10' %}
+    .active9{
+        background-color: #4472C4;
+    }
+    {% endif %}
+{% endfor %}
+
+</style>
+{% endblock style %}
+
+
+{% block content %}
+  <div class="container">
+  <h2 class="text-center mt-3 mb-2 border-bottom" style="color: #696969;">Readiness Assessment Roll-up</h2>
+  <div>
+  <a href="{% url 'eco' %}" class="btn btn-primary btn-sm mb-3" style="margin-left: 20px;">Go Back</a>
+  </div>
+  <div class="main active">
+      <p>{{ids.0}}</p>
+  </div>
+  <div class="main active1">
+    <p>{{ids.1}}</p>
+</div>
+<div class="main active2">
+    <p>{{ids.2}}</p>
+</div>
+<div class="main active3">
+    <p>{{ids.3}}</p>
+</div>
+<div class="main active4">
+    <p>{{ids.4}}</p>
+</div>
+<div class="main active5">
+    <p>{{ids.5}}</p>
+</div>
+<div class="main active6">
+    <p>{{ids.6}}</p>
+</div>
+<div class="main active7">
+    <p>{{ids.7}}</p>
+</div>
+<div class="main active8">
+    <p>{{ids.8}}</p>
+</div>
+<div class="main active9">
+    <p>{{ids.9}}</p>
+</div>
+  </div>
+
+{% endblock content %}
